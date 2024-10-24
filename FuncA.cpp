@@ -1,14 +1,14 @@
 #include "funcA.h"
+#include <cmath>
 
-// Реалізація функції FuncA, яка поки повертає 0
+// Реалізація функції для обчислення суми n елементів ряду
 double FuncAClass::FuncA(int n) {
-    return 0;  // Початкова реалізація
+    double sum = 0;
+    for (int i = 0; i < n; ++i) {
+        // Додай формулу відповідно до завдання
+        sum += pow(-1, i) * eulerNumber(2 * i) * pow(x, 2 * i) / factorial(2 * i);
+
+    }
+    return sum;
 }
-
-
-
-
-
-
-
 
